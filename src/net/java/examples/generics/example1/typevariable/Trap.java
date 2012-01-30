@@ -44,6 +44,7 @@ public class Trap<T> {
       // in the same class. So I'm pretty certain that 'trapped' will always be
       // null at this point
       // meaning the following code can never be called.
+      
       System.out.println("Trap instance initialiser 2: " + trapped.getClass().getSimpleName());
     }
     allTrappedByThisInstance = new ArrayList<T>();
