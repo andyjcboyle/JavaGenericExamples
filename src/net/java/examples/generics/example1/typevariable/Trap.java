@@ -31,7 +31,7 @@ public class Trap<T> {
     // Variable 'T' - i.e. don't know what 'T' is at runtime so can't be used
     // To create the array list
 
-    // allTrappedByThisInstance = new ArrayList<T>();
+//     allTrappedByThisInstance = new ArrayList<T>();
   }
 
   {
