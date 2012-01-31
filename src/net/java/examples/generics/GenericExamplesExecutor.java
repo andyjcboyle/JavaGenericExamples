@@ -6,6 +6,7 @@ public class GenericExamplesExecutor {
 
 	public static void main(String[] args) {
 		example1_theTypeVariable();
+		example2_subclassingGenerics();
 	}
 	
 }
