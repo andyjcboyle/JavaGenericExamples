@@ -7,12 +7,12 @@ import net.java.examples.generics.example1.typevariable.Trap;
 // the type parameter to the base class
 public class AdjustableTrap<T> extends Trap<T> {
 
-  public AdjustableTrap(T trapped) {
-    super(trapped);
-  }
+	public AdjustableTrap(T trapped) {
+		super(trapped);
+	}
 
-  // NOTE:
-  public void setSize(int i) {
-    // set array size etc ...
-  }
+	// NOTE:
+	public void setSize(int i) {
+		// set array size etc ...
+	}
 }

@@ -8,5 +8,5 @@ public class GenericExamplesExecutor {
 		example1_theTypeVariable();
 		example2_subclassingGenerics();
 	}
-	
+
 }
