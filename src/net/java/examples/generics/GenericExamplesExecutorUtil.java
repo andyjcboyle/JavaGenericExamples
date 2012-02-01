@@ -3,10 +3,10 @@ package net.java.examples.generics;
 import java.util.Date;
 import java.util.List;
 
-import net.java.examples.generics.example1.typevariable.Mouse;
-import net.java.examples.generics.example1.typevariable.Trap;
-import net.java.examples.generics.example2.subclassingGenerics.DateList;
-import net.java.examples.generics.example2.subclassingGenerics.RawList;
+import net.java.examples.generics.writingGenericClasses.example1.typevariable.Mouse;
+import net.java.examples.generics.writingGenericClasses.example1.typevariable.Trap;
+import net.java.examples.generics.writingGenericClasses.example2.subclassingGenerics.DateList;
+import net.java.examples.generics.writingGenericClasses.example2.subclassingGenerics.RawList;
 
 public class GenericExamplesExecutorUtil {
 	public static void example1_theTypeVariable() {

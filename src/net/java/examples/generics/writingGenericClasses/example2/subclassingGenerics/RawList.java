@@ -1,4 +1,4 @@
-package net.java.examples.generics.example2.subclassingGenerics;
+package net.java.examples.generics.writingGenericClasses.example2.subclassingGenerics;
 
 import java.util.ArrayList;
 

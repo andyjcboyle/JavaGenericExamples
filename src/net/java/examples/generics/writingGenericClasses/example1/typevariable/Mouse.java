@@ -1,4 +1,4 @@
-package net.java.examples.generics.example1.typevariable;
+package net.java.examples.generics.writingGenericClasses.example1.typevariable;
 
 public class Mouse {
 	private String name;
