@@ -7,6 +7,8 @@ import net.java.examples.generics.writingGenericClasses.example1.typevariable.Mo
 import net.java.examples.generics.writingGenericClasses.example1.typevariable.Trap;
 import net.java.examples.generics.writingGenericClasses.example2.subclassingGenerics.DateList;
 import net.java.examples.generics.writingGenericClasses.example2.subclassingGenerics.RawList;
+import net.java.examples.generics.writingGenericClasses.example3.exceptionsAndGenerics.ExceptionTester;
+import net.java.examples.generics.writingGenericClasses.example4.parameterTypeLimitations.CreateGenericInstanceWithClass;
 
 public class GenericExamplesExecutorUtil {
 	public static void example1_theTypeVariable() {
@@ -42,4 +44,26 @@ public class GenericExamplesExecutorUtil {
 		superDateList.add(new Date());
 	}
 
+	public static void example3_exceptionsAndGenerics() {
+		// NOTE: Compiler still aware of checked exception, as usual i.e.
+		// try,catch needed etc
+		try {
+			new ExceptionTester<ClassNotFoundException>()
+					.test(new ClassNotFoundException());
+		} catch (Throwable e) {
+			System.out.println("Got our exception");
+			e.printStackTrace();
+		}
+
+		// NOTE: and as expected runtime exception doesn't need try,catch
+		new ExceptionTester<NullPointerException>()
+				.test(new NullPointerException());
+	}
+
+	public static void example4_parameterTypeLimitations() {
+		CreateGenericInstanceWithClass<String> myNewClass = new CreateGenericInstanceWithClass<String>();
+		myNewClass.test1(Date.class);
+//		 myNewClass.test2(Date.class); // This is a compile error
+		myNewClass.test2(String.class);
+	}
 }
