@@ -62,8 +62,8 @@ public class GenericExamplesExecutorUtil {
 
 	public static void example4_parameterTypeLimitations() {
 		CreateGenericInstanceWithClass<String> myNewClass = new CreateGenericInstanceWithClass<String>();
-		myNewClass.test1(Date.class);
+		myNewClass.testInstantiateRawClassType(Date.class);
 //		 myNewClass.test2(Date.class); // This is a compile error
-		myNewClass.test2(String.class);
+		myNewClass.testInstantiateGenericClassType(String.class);
 	}
 }
