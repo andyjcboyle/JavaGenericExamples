@@ -3,7 +3,7 @@ package net.java.examples.generics.writingGenericClasses.example4.parameterTypeL
 public class CreateGenericInstanceWithClass<T> {
 
 	public void showCannotInstantiateUsingTypeVariable() {
-		// T myVar = new T(); // Doesn't compile
+//		 T myVar = new T(); // Doesn't compile
 	}
 
 	// NOTE: The thing to note is that we want to tie 'type' to T

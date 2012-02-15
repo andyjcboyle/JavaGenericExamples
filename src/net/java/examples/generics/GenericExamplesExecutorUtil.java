@@ -40,7 +40,7 @@ public class GenericExamplesExecutorUtil {
 
 	private static void usingNonGenerifiedExtendedDateList() {
 		DateList myDateList = new DateList();
-		// myDateList.add("hello"); // as expected can only add Date's
+//		 myDateList.add("hello"); // as expected can only add Date's
 		myDateList.add(new Date());
 
 		// NOTE: Can assign the generified list to List<Date> superclass
@@ -67,7 +67,7 @@ public class GenericExamplesExecutorUtil {
 	public static void example4_parameterTypeLimitations() {
 		CreateGenericInstanceWithClass<String> myNewClass = new CreateGenericInstanceWithClass<String>();
 		myNewClass.testInstantiateRawClassType(Date.class);
-		// myNewClass.test2(Date.class); // This is a compile error
+//		myNewClass.testInstantiateGenericClassType(Date.class); // This is a compile error
 		myNewClass.testInstantiateGenericClassType(String.class);
 	}
 }
