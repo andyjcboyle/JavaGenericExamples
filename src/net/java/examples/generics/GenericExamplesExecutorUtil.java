@@ -13,11 +13,15 @@ import net.java.examples.generics.writingGenericClasses.example4.parameterTypeLi
 public class GenericExamplesExecutorUtil {
 	public static void example1_theTypeVariable() {
 		Trap<Mouse> mouseTrap = new Trap<Mouse>(new Mouse("Mickey"));
+		
 		mouseTrap.snare(new Mouse("Minnie"));
 		Mouse aMouse = mouseTrap.release();
 		System.out.println("Trapped a Mouse: " + aMouse);
+		
 		mouseTrap.snare(new Mouse("Mighty"));
-
+		aMouse = mouseTrap.release();
+		System.out.println("Trapped a Mouse: " + aMouse);
+		
 		System.out.println("\n\n--- A list of all things caught.\n");
 		for (Mouse mouse : mouseTrap.allBeenTrappedSoFar()) {
 			System.out.println(mouse);
